@@ -7,11 +7,11 @@ Vagrant.configure("2") do |config|
     vb.cpus = 1
   end
 
-  (1..4).each do |i|
+  (1..1).each do |i|
     hostname = "server#{'%01d' % i}"
     config.vm.define "#{hostname}" do |node|
       node.vm.hostname = "#{hostname}"
-      node.vm.network "private_network", ip: "192.168.56.#{200 + i}"
+      node.vm.network "private_network", ip: "192.168.56.#{100 + i}"
       node.vm.provider "virtualbox" do |vb|
 	    vb.memory = 2048
         vb.cpus = 1
