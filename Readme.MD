@@ -88,7 +88,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 # 노드명은 적절히 예) 서버명 입력하고 Type을 Permanent Agent 지정 ---> Create
 ```
 
-### 노드 설정
+#### 노드 설정
 ```ssh
 # 설명은 간단히 알아보기 쉽게 : 서버명, IP 주소등 입력
 # Number of executors : 2
