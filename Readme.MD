@@ -14,10 +14,11 @@
 ## 설치방법
 * Oracle VirtualBox 설치(https://www.virtualbox.org/)
 * Vagrant 설치(https://developer.hashicorp.com/vagrant/install?product_intent=vagrant)
-* git clone https://github.com/stepanowon/vagrant-ubuntu
-* cd vagrant-ubuntu
-* vagrant up
-
+```ssh
+git clone https://github.com/stepanowon/vagrant-ubuntu
+cd vagrant-ubuntu
+vagrant up
+```
 ---
 ## Jenkins 서버를 설치하려면...
 ---
