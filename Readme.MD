@@ -25,12 +25,14 @@ vagrant up
 ---
 #### JDK 설치
 ```ssh
+# server1, 2, 3 모두에서 실행
 sudo apt update
 sudo apt install openjdk-17-jdk-headless
 ```
 
 #### Jenkins 설치
 ```ssh
+# server1에서만 실행
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
@@ -63,14 +65,14 @@ sudo systemctl start docker
 sudo chmod 666 /var/run/docker.sock   
 ```
 
-#### Jenkins 초기 패스워드 획득
+#### jenkins 초기 패스워드 획득
 ```ssh
+# server1에서 실행
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
----
 
-## Jenkins 분산 에이전트 추가
 ---
+## Jenkins 분산 에이전트 추가
 #### SSH 키 생성(server1 에서)
 ```ssh
 # ssh-keygen -t rsa 명령어로 키페어 생성
