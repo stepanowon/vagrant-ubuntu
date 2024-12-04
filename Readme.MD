@@ -12,8 +12,9 @@
 * 모든 vm에 hosts 파일 등록 : server1~4
 
 ## 설치방법
-* Oracle VirtualBox 설치(https://www.virtualbox.org/)
-* Vagrant 설치(https://developer.hashicorp.com/vagrant/install?product_intent=vagrant)
+* Oracle VirtualBox 설치 - https://www.virtualbox.org
+* Vagrant 설치 - https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
+
 ```ssh
 git clone https://github.com/stepanowon/vagrant-ubuntu
 cd vagrant-ubuntu
