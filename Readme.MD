@@ -7,7 +7,7 @@
 * user1/asdf 로 사용자 생성
 * user1을 sudoer로 등록
 * git, docker 설치
-* hostname : server1 ~ server4
+* hostname : server1 ~ server3
 * ip 주소 : 192.168.56.101~103
 * 모든 vm에 hosts 파일 등록 : server1~4
 
