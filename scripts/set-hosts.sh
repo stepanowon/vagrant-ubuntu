@@ -8,7 +8,6 @@ cat << EOF > /etc/hosts
 192.168.56.101  	server1
 192.168.56.102  	server2
 192.168.56.103  	server3
-192.168.56.104  	server4
 EOF
 
 cat /etc/hosts
