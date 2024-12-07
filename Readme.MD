@@ -104,3 +104,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 # Host Key Verification Strategy : Manually trusted key Verification Strategy
 # Availability : Keep this agent online as much as posiible
 ```
+
+#### 노드간 시간이 일치하지 않을 때
+```sh
+# 모든 노드에서 다음 명령어 실행
+sudo timedatectl set-ntp yes
+```
