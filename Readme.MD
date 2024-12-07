@@ -2,14 +2,14 @@
 
 
 # Ubuntu-24.04 리눅스 3개 노드 설정
----
+
 ## 설정 내용
 * user1/asdf 로 사용자 생성
 * user1을 sudoer로 등록
 * git, docker 설치
 * hostname : server1 ~ server3
 * ip 주소 : 192.168.56.101~103
-* 모든 vm에 hosts 파일 등록 : server1~4
+* 모든 vm에 hosts 파일 등록 : server1~3
 
 ## 설치방법
 * Oracle VirtualBox 설치 - https://www.virtualbox.org
@@ -19,10 +19,13 @@
 git clone https://github.com/stepanowon/vagrant-ubuntu
 cd vagrant-ubuntu
 vagrant up
+
+# 모두 설치 후 
+vagrant reload
 ```
 ---
-## Jenkins 서버를 설치하려면...
----
+## Jenkins 설치
+
 #### JDK 설치
 ```ssh
 # server1, 2, 3 모두에서 실행
